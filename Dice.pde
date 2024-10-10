@@ -46,6 +46,7 @@ class Die //models one single dice cube
     int centerX= myX + 30;
     int centerY = myY + 30;
     strokeWeight(5);
+    fill ((int)(Math.random()*255));
       rect (myX, myY, 60, 60);
       divots(centerX, centerY);
     //your code here
@@ -59,17 +60,15 @@ class Die //models one single dice cube
   {
     centerX = myX+30;
     centerY = myY+30;
-    fill(255);
+    fill ((int)((Math.random()*255)),(int)((Math.random()*255)),(int)((Math.random()*255)));
     rect (myX, myY, 60, 60);
     if (numDots == 1) {
-      fill(255);
       strokeWeight(5);
       fill(0);
       strokeWeight(1);
       ellipse(centerX, centerY, 10, 10);
     }
     if (numDots == 2) {
-      fill(255);
       strokeWeight(5);
       fill(0);
       strokeWeight(1);
@@ -77,7 +76,6 @@ class Die //models one single dice cube
       ellipse (centerX - 10, centerY - 10, 10, 10);
     }
     if (numDots == 3) {
-      fill(255);
       strokeWeight(5);
       fill(0);
       strokeWeight(1);
@@ -86,7 +84,6 @@ class Die //models one single dice cube
       ellipse (centerX - 15, centerY - 15, 10, 10);
     }
     if (numDots == 4) {
-      fill(255);
       strokeWeight(5);
       fill(0);
       strokeWeight(1);
@@ -96,7 +93,6 @@ class Die //models one single dice cube
       ellipse (centerX - 12, centerY - 10, 10, 10);
     }
     if (numDots == 5) {
-      fill(255);
       strokeWeight(5);
       fill(0);
       strokeWeight(1);
@@ -107,7 +103,6 @@ class Die //models one single dice cube
       ellipse (centerX, centerY, 10, 10);
     }
     if (numDots == 6) {
-      fill(255);
       strokeWeight(5);
       fill(0);
       strokeWeight(1);
